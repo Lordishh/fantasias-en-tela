@@ -39,6 +39,10 @@ body {
   padding: 10px;
 }
 
+.current a {
+  text-decoration: underline !important;
+}
+
 .logo img {
   width: 300px;
   border-radius: 50%;
@@ -218,6 +222,8 @@ body {
   .nav-items {
     grid-column: 1 / 5;
     text-align: center;
+    height: 0;
+    overflow: hidden;
   }
   .nav-wrapper ul {
     padding: 0;
@@ -227,19 +233,16 @@ body {
     display: block;
   }
 
-  .mobile-hide {
-    display: none;
+  .mostrar {
+    height: 215px;
   }
 
-  .mobile-show {
-    display: block;
-  }
   .burger-icon {
     display: inline-block;
     justify-self: end;
     grid-column: 4 / 5;
-    border: 2px solid #333;
-    color: #333;
+    border: 2px solid #6d6060;
+    color: #6d6060;
     padding: 10px;
     font-weight: bold;
     border-radius: 3px;
